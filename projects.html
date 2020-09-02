@@ -23,6 +23,9 @@
 					<li><a href="contact.html">Contacts</a></li>
 				</ul>
 			</div>
+			<div class="mobile-menu" id="menu-button" onclick="toggleMenu()">
+    			<i style="color:white" class="fa fa-bars fa-2x"></i>
+  			</div>
 		</div>
 		<h2> Fictitious Projects</h2>
 		<div class="container2">
@@ -77,9 +80,26 @@
 	</div>
 
 <script>
-  $(window).load(function() {
-    $('#loading').hide();
-  });
+
+		let open = false;
+ window.onload = function (argument) {
+ 	
+ }
+
+ function toggleMenu() {
+ 	var menuButton = document.getElementById("menu-button");
+ 	var menu = document.getElementById("menu");
+
+ 	if(open){
+ 		menu.style.right = "-300px";
+ 		open = false;
+ 	}else{
+ 		menu.style.right = 0;
+ 		open = true;
+ 	}
+
+ 	console.log("Ran")
+ }
 </script>
 	
 </body>

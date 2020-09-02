@@ -23,6 +23,9 @@
 					<li><a href="contact.html">Contacts</a></li>
 				</ul>
 			</div>
+			<div class="mobile-menu" id="menu-button" onclick="toggleMenu()">
+    			<i style="color:white" class="fa fa-bars fa-2x"></i>
+  			</div>
 		</div>
 <!--About-->
 		<div class="container1">
@@ -105,10 +108,28 @@
 
 
 <script>
-  		$(window).load(function() {
-   		$('#loading').hide();
-  		});
+
+		let open = false;
+ window.onload = function (argument) {
+ 	
+ }
+
+ function toggleMenu() {
+ 	var menuButton = document.getElementById("menu-button");
+ 	var menu = document.getElementById("menu");
+
+ 	if(open){
+ 		menu.style.right = "-300px";
+ 		open = false;
+ 	}else{
+ 		menu.style.right = 0;
+ 		open = true;
+ 	}
+
+ 	console.log("Ran")
+ }
 </script>
+	
 
 </body>
 </html>
