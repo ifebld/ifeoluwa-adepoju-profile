@@ -3,10 +3,12 @@
 <head>
 	<title>My-Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body>
+	
 	<!--Navigation Bar-->
 		<div class="container">
 			<div class="initials">
@@ -20,10 +22,48 @@
 					<li><a href="contact.html">Contacts</a></li>
 				</ul>
 			</div>
+			<div class="mobile-menu" id="menu-button" onclick="toggleMenu()">
+    			<i style="color:white" class="fa fa-bars fa-2x"></i>
+  			</div>
 		</div>
 
 	<div class="text">
 		<h1>Hi,<br>I'm <span>Ifeoluwa,</span><br>Junior Front End Web Designer <br><h3>TIIDELab Fellow</h3> <br></h1>
 	</div>
+
+
+
+	<div class="slide-menu" id="menu">
+		<ul>
+					<li><a href="About.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="contact.html">Contacts</a></li>
+				</ul>
+	</div>
+
+
+	<script>
+
+		let open = false;
+ window.onload = function (argument) {
+ 	
+ }
+
+ function toggleMenu() {
+ 	var menuButton = document.getElementById("menu-button");
+ 	var menu = document.getElementById("menu");
+
+ 	if(open){
+ 		menu.style.right = "-300px";
+ 		open = false;
+ 	}else{
+ 		menu.style.right = 0;
+ 		open = true;
+ 	}
+
+ 	console.log("Ran")
+ }
+</script>
+	
 </body>
 </html>

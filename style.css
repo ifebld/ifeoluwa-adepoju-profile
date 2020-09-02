@@ -4,9 +4,32 @@
 	font-family: arial;
 }
 
+/*loader*/
+
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  opacity: 0.7;
+  background-color: #fff;
+  z-index: 99;
+  text-align: center;
+}
+
+#loading-image {
+  position: absolute;
+  top: 100px;
+  left: 240px;
+  z-index: 100;
+}
+
 body{
 	background: #333;
 }
+/* Navigation Bar*/
 .container{
 	margin: 0;
 	padding: 0;
@@ -32,30 +55,7 @@ body{
 }
 
 .top{
-	width: 45%;
-	padding: 10px;
-	margin:5px;
-	padding: 2px;
-
-}
-
-.top ul{
-	font-weight: 200;
-	font-size: 17px;
-	padding: 3px;
-}
-
-.top ul li{
-	list-style: none;
-}
-
-.top ul li a{
-	text-decoration: none;
-	color: #666;
-}
-
-.top ul li a:hover{
-	color: rgb(255, 32, 66);
+	display: none;
 }
 
 .text{
@@ -282,6 +282,85 @@ body{
 	font-weight: 600;
 }
 
+#contact-form{
+	position: relative;
+	display: block;
+	float: right;
+	margin-top: 20px;
+	margin-right: 60px;
+}
+
+#contact-form p{
+	color: rgb(0, 196, 255);
+	text-align: center;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#contact-form label{
+	color: #fff;
+	padding: 3px;
+	font-size: 14px;
+}
+
+#contact-form button{
+	margin-top: 10px;
+	width: 100px;
+	height: 25px;
+	border-radius: 5px;
+	margin-left: 100px;
+	background: rgb(0,196,255);
+}
+
+#contact-form button:hover{
+	background: #666;
+
+}
+
+.mobile-menu{
+	margin-top: 15px;
+	margin-right: 20px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	height: auto;
+	width: 70px;
+	height: 30px;
+	text-align: center;
+	padding: 4px;
+}
+
+.slide-menu{
+	position: absolute;
+	width: 300px;
+	height: 400px;
+	background-color: #666;
+	top: 0;
+	right : -300px;
+	margin-top: 100px;
+	clear: both;
+	transition : right 1s;
+}
+
+.slide-menu ul{
+	font-weight: 200;
+	font-size: 17px;
+	padding: 20px;
+	margin: 15px;
+}
+
+.slide-menu ul li{
+	list-style: none;
+}
+
+.slide-menu ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.slide-menu ul li a:hover{
+	color: rgb(255, 32, 66);
+}
 
 @media (min-width: 992px) {
 
@@ -310,26 +389,35 @@ body{
 }
 
 	.top{
-		width: 100%;
-		background: #000;
-		text-align: center;
-	}
+	width: 45%;
+	height: 20px
+	padding: 50px;
+	margin:5px;
+	padding: 2px;
+	background-color: red;
 
-	.top ul{
-		float: right;
-		display: inline-flex;
-		list-style: none;
-		position: absolute;
 }
 
-	.top ul li{
-		margin: 10px;
-		padding: 10px;
-		text-align: center;
-		font-size: 12px;
-		font-weight: 600;
-		letter-spacing: 0.8px;	
-	}
+.top ul{
+	display: block;
+	font-weight: 200;
+	font-size: 17px;
+	padding: 3px;
+	color: #fff;
+}
+
+.top ul li{
+	list-style: none;
+}
+
+.top ul li a{
+	text-decoration: none;
+	color: #666;
+}
+
+.top ul li a:hover{
+	color: rgb(255, 32, 66);
+}
 	
 	body{	
 		background-image: url(Images/img-02.jpg);
@@ -485,4 +573,89 @@ body{
 	letter-spacing: 1px;
 	font-weight: 600;
 }
+
+#contact-form{
+	position: relative;
+	display: block;
+	float: right;
+	margin-top: -100px;
+	margin-right: 60px;
+}
+
+#contact-form p{
+	color: rgb(0, 196, 255);
+	text-align: center;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#contact-form label{
+	color: #fff;
+	padding: 3px;
+	font-size: 14px;
+}
+
+#contact-form button{
+	margin-top: 10px;
+	width: 100px;
+	height: 25px;
+	border-radius: 5px;
+	margin-left: 100px;
+	background: rgb(0,196,255);
+}
+
+#contact-form button:hover{
+	background: #666;
+
+}
+
+.mansonry {
+    width: 90% ;
+    margin-top: 150px;
+    padding: 20px;
+    -moz-columns: 4;
+         columns: 4;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    
+         }
+
+    .m-heading {
+        color: #f7c08a;
+        }
+	.mansonry .box {
+    	width: 100%;
+    	margin-bottom:  10px;
+    	padding: 10px;
+    	overflow: hidden;
+		}
+
+.mansonry .box img {
+    max-width: 270px;
+    border-radius: 20px;
+}
+
+.mansonry.box h4 {
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 10px;
+    
+}
+.mansonry.box h2 {
+    color: whitesmoke;
+    }
+
+#picture-section {
+    margin-top: 70px;
+}
+
+.mobile-menu{
+	display: none;
+}
+
+.slide-menu{
+	display: none;
+}
+
 }
