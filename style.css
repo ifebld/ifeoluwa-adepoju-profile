@@ -54,7 +54,7 @@ body{
 	color: #666;
 }
 
-.top{
+.top ul{
 	display: none;
 }
 
@@ -318,6 +318,46 @@ body{
 
 }
 
+.mansonry {
+    width: 50% ;
+    margin-top: 150px;
+    padding: 20px;
+    -moz-columns: 4;
+         columns: 4;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    
+         }
+
+    .m-heading {
+        color: #f7c08a;
+        }
+	.mansonry .box {
+    	width: 40%;
+    	margin-bottom:  10px;
+    	padding: 10px;
+    	overflow: hidden;
+		}
+
+.mansonry .box img {
+    max-width: 40px;
+    border-radius: 20px;
+}
+
+.mansonry.box h4 {
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 10px;
+    
+}
+.mansonry.box h2 {
+    color: whitesmoke;
+    }
+
+#picture-section {
+    margin-top: 70px;
+}
+
 .mobile-menu{
 	margin-top: 15px;
 	margin-right: 20px;
@@ -364,7 +404,7 @@ body{
 
 @media (min-width: 992px) {
 
-	.container{
+.container{
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -388,18 +428,19 @@ body{
 	color: #666;
 }
 
-	.top{
+.top{
+	position: relative;
 	width: 45%;
 	height: 20px
 	padding: 50px;
 	margin:5px;
 	padding: 2px;
-	background-color: red;
-
 }
 
 .top ul{
-	display: block;
+	display: flex;
+	margin: 30px;
+	justify-content: space-between;
 	font-weight: 200;
 	font-size: 17px;
 	padding: 3px;
@@ -428,7 +469,7 @@ body{
 		height: 100vh;
 	}
 
-	.container1{
+.container1{
 		display: inline-flex;
 		width: 95%;
 		height: 400px;
