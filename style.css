@@ -27,7 +27,7 @@
 }
 
 body{
-	background: #333;
+	background: #222;
 }
 /* Navigation Bar*/
 .container{
@@ -130,6 +130,7 @@ body{
 .container1 .Pg3text img{
 	border-radius: 20px;
 	margin: 5px;
+	margin-top: 220px;
 }
 
 .skillz{
@@ -169,6 +170,18 @@ body{
 	word-spacing: 1px;
 }
 
+.link button{
+	width: 120px;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    background: rgb(0, 196, 255);
+}
+
 .form-element{
 	padding : 10px;
 }
@@ -178,7 +191,9 @@ body{
 	height: 40px;
 	border: none;
 	border-bottom: 2px solid #ccc;
+	border-radius: 5px;
 }
+
 
 .form-element input:focus{
 	border-bottom: 2px solid rgb(106, 90, 205);
@@ -248,8 +263,8 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 280px;
-	height: 270px;
+	width: 250px;
+	height: 250px;
 	margin: 5px;
 	border-bottom: 1px solid #fff;
 }
@@ -286,7 +301,7 @@ body{
 	position: relative;
 	display: block;
 	float: right;
-	margin-top: 20px;
+	margin-top: -100px;
 	margin-right: 60px;
 }
 
@@ -319,29 +334,21 @@ body{
 }
 
 .mansonry {
-    width: 50% ;
-    margin-top: 150px;
-    padding: 20px;
-    -moz-columns: 4;
-         columns: 4;
-    -moz-column-gap: 30px;
-         column-gap: 30px;
-    
-         }
+    width: 500px ;
+    margin-top: 50px;
+    margin-left: 50px;
+}
 
-    .m-heading {
-        color: #f7c08a;
-        }
-	.mansonry .box {
-    	width: 40%;
+.mansonry .box {
+    	width: 150px;
+    	display: inline-block;
     	margin-bottom:  10px;
     	padding: 10px;
-    	overflow: hidden;
-		}
+}
 
 .mansonry .box img {
-    max-width: 40px;
-    border-radius: 20px;
+    max-width: 140px;
+    border-radius: 10px;
 }
 
 .mansonry.box h4 {
@@ -350,8 +357,8 @@ body{
     font-size: 10px;
     
 }
-.mansonry.box h2 {
-    color: whitesmoke;
+.mansonry .mason {
+    
     }
 
 #picture-section {
@@ -359,27 +366,29 @@ body{
 }
 
 .mobile-menu{
-	margin-top: 15px;
-	margin-right: 20px;
-	border: 1px solid #fff;
+	margin-top: 25px;
+	margin-right: 10px;
 	border-radius: 3px;
 	height: auto;
 	width: 70px;
 	height: 30px;
 	text-align: center;
 	padding: 4px;
+	color: #666;
 }
 
 .slide-menu{
 	position: absolute;
-	width: 300px;
-	height: 400px;
+	width: 200px;
+	height: 150px;
 	background-color: #666;
 	top: 0;
-	right : -300px;
+	right : -200px;
 	margin-top: 100px;
 	clear: both;
 	transition : right 1s;
+	border-radius: 8px;
+	text-align: center;
 }
 
 .slide-menu ul{
@@ -391,6 +400,7 @@ body{
 
 .slide-menu ul li{
 	list-style: none;
+	margin: 10px;
 }
 
 .slide-menu ul li a{
@@ -399,7 +409,7 @@ body{
 }
 
 .slide-menu ul li a:hover{
-	color: rgb(255, 32, 66);
+	color: #000;
 }
 
 @media (min-width: 992px) {
@@ -515,8 +525,8 @@ body{
 
 	.container1 .Pg3text img{
 		border-radius: 20px;
-		margin-left: 50px;
-		margin-top: 10px;
+		margin-left: 150px;
+		margin-top: 20px;
 	}
 
 	.pg{
@@ -619,8 +629,8 @@ body{
 	position: relative;
 	display: block;
 	float: right;
-	margin-top: -100px;
-	margin-right: 60px;
+	margin-top: -130px;
+	margin-right: 180px;
 }
 
 #contact-form p{
@@ -652,40 +662,45 @@ body{
 }
 
 .mansonry {
-    width: 90% ;
-    margin-top: 150px;
-    padding: 20px;
-    -moz-columns: 4;
-         columns: 4;
-    -moz-column-gap: 30px;
-         column-gap: 30px;
-    
-         }
+	position: relative;
+    width: 1200px ;
+    margin-top: 130px;
+    margin-left: 50px;
+    margin-right: 50px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
-    .m-heading {
-        color: #f7c08a;
-        }
-	.mansonry .box {
-    	width: 100%;
-    	margin-bottom:  10px;
-    	padding: 10px;
-    	overflow: hidden;
-		}
+.mansonry h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+}
+   
+.mansonry .box {
+    width: 240px;
+    height: 250px;
+    margin:  10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: inline-block;
+}
 
 .mansonry .box img {
-    max-width: 270px;
+    max-width: 220px;
     border-radius: 20px;
 }
 
-.mansonry.box h4 {
-    margin: 10px 0 0;
-    padding: 0;
-    font-size: 10px;
+.mansonry .box h4 {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 15px;
+    color: #fff;
     
 }
-.mansonry.box h2 {
-    color: whitesmoke;
-    }
+
 
 #picture-section {
     margin-top: 70px;
@@ -699,4 +714,14 @@ body{
 	display: none;
 }
 
+.link button{
+	width: 120px;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    background: rgb(0, 196, 255);
 }
