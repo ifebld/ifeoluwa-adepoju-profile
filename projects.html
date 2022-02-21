@@ -1,108 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>About</title>
-	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta name="description" content="My name is Ifeoluwa Adepoju>, I'm a Frontend developer and this is my portfolio" />
+  <title>Ifeoluwa Adepoju</title>
+  <link rel="stylesheet" href="./css/socials/font/flaticon.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/mobile.css" />
+  <script src="https://kit.fontawesome.com/0b544dd14e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+  <!-- Header Section -->
+  <header class="header">
+    <!-- Nav Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <h1><a href="./index.html" id="name">IFEOLUWA ADEPOJU</a></h1>
+        <button type="button" class="hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-list hamburger-list1"></span>
+            <span class="hamburger-list hamburger-list2"></span>
+            <span class="hamburger-list hamburger-list3"></span>
+          </span>
+        </button>
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a class="current" href="./projects.html">PROJECTS</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-	
+  <!-- Projects -->
+  <main class="projects">
+    <div class="container">
+      <h1 id="main-name">PROJECTS</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="./img/projects/i2talk.PNG" alt="MartReach" />
+          <div class="box-body">
+            <div class="app-description">
+              <h4>i2talk</h4>
+              <p>i2talk is is a chat webapp that includes a reminder and sheduler.
+              </p>
+              <div class="tags">
+                <p>REACTJS</p>
+                <p>NODEJS</p>
+                <p>SQL</p>
+                <p>BOOTSTRAP</p>
+                <p>CSS</p>
+              </div>
+            </div>
+            <div class="link">
+              <a href="https://github.com/maura-dev/i2talk-react-project" target="_blank"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
 
-	<!--Navigation Bar-->
-		<div class="container">
-			<div class="initials">
-				<h1><a href="index.html">Ifeoluwa Adepoju</a></h1>
-			</div>
+        <div class="box">
+          <img src="./img/projects/T-d-l.png" alt="todo-list" />
+          <div class="box-body">
+            <div class="app-description">
+              <h4>Todo List App</h4>
+              <p>A todo list app to keep track of various tasks.</p>
+              <div class="tags">
+                <p>REACTJS</p>
+                <p>STYLED COMPONENTS</p>
+              </div>
+            </div>
+            <div class="link">
+              <a href="https://github.com/ifebld/React-To-do-app" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
 
-			<div class="top">
-				<ul>
-					<li><a href="About.html">Home</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="contact.html">Contacts</a></li>
-				</ul>
-			</div>
-			<div class="mobile-menu" id="menu-button" onclick="toggleMenu()">
-    			<i style="color:white" class="fa fa-bars fa-2x"></i>
-  			</div>
-		</div>
+        <div class="box">
+          <img src="./img/projects/EPL.png" alt="premier-league-table" />
+          <div class="box-body">
+            <div class="app-description">
+              <h4>Premier League Table</h4>
+              <p>A table that contains the standings of 20 english football clubs in the premier league that allows
+                scores
+                to be updated.</p>
+              <div class="tags">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JAVASCRIPT</p>
+                <p>BOOTSTRAP</p>
+              </div>
+            </div>
+            <div class="link">
+              <a href="https://github.com/ifebld/EPL-Table" target="_blank"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
+  <!-- Footer Section -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div id="contact">
+        <div class="social-foot">
+          <a href="tel:+2348133583159" target="_blank"><i class="flaticon-phone-call"></i></a>
+          <a href="mailto:ifebld@gmail.com" target="_blank"><i class="flaticon-email"></i></a>
+          <a href="https://www.linkedin.com/in/ifeoluwa-adepoju" target="_blank"><i class="flaticon-linkedin"></i></a>
+          <a href="https://github.com/ifebld" target="_blank"><i class="flaticon-github"></i></a>
+        </div>
+      </div>
+      <div id="copyright">
+        <p>Ifeoluwa Adepoju &copy; 2021, All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
 
-			<div class="slide-menu" id="menu" >
-				<ul>
-					<li><a href="About.html">Home</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="contact.html">Contacts</a></li>
-				</ul>
-			</div>
-
-
-		<h2> Fictitious Projects</h2>
-		<div class="container2">
-			
-			<div class="box1">
-				<a href="https://magodo-construction.netlify.app"><img src="Images/shot1.png" width="240px" height="145px"></a>
-			</div>
-			<div class="box2">
-				<a href="https://magodo-construction.netlify.app"><img src="Images/shot2.png" width="240px" height="145px"></a>
-			</div>
-			<div class="box2">
-				<a href="https://owambe-clothing.netlify.app/"><img src="Images/shot3.png" width="240px" height="145px"></a>
-			</div>
-		</div>
-
-	<div class="contain">
-		<div class="square">
-			<div class="content">
-				<i class="fas fa-quote-right"></i>
-				<p>Hard working young man with an amazing work ethic, he might not be the smartest in the room but never underestimate his skills.</p>
-				<img src="Images/dummy-image.jpg"width="70px" height="70px"  class="quto">
-				<h3>Mr kolawole</h3>
-			</div>
-		</div>
-
-		<div class="square">
-			<div class="content">
-				<i class="fas fa-quote-right"></i>
-				<p>working with <i>Ifeoluwa<i> is always a delight, he makes everyone around him feel happy with whatever they have been tasked to do.</p>
-				<img src="Images/dummy-image.jpg" width="70px" height="70px" class="quto">
-				<h3>Musliu Adamu</h3>
-			</div>
-		</div>
-
-		<div class="square">
-			<div class="content">
-				<i class="fas fa-quote-right"></i>
-				<p>Speaking as an employee of his for over a year, he was an amazing leader that was never ashamed of learning from his surbordinate.</p>
-				<img src="Images/dummy-image.jpg" width="70px" height="70px" class="quto">
-				<h3>Bright Alobo</h3>
-			</div>
-		</div>
-	</div>
-
-<script>
-
-		let open = false;
- window.onload = function (argument) {
- 	
- }
-
- function toggleMenu() {
- 	var menuButton = document.getElementById("menu-button");
- 	var menu = document.getElementById("menu");
-
- 	if(open){
- 		menu.style.right = "-300px";
- 		open = false;
- 	}else{
- 		menu.style.right = 0;
- 		open = true;
- 	}
-
- 	console.log("Ran")
- }
-</script>
-	
+  <!-- Javascript -->
+  <script src="./js/main.js"></script>
 </body>
-</html>		
+
+</html>

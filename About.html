@@ -1,141 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>About</title>
-	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta name="description" content="My name is Ifeoluwa Adepoju, I'm a Frontend developer and this is my portfolio" />
+  <title>Ifeoluwa Adepoju</title>
+  <link rel="stylesheet" href="./css/socials/font/flaticon.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/mobile.css" />
+  <script src="https://kit.fontawesome.com/0b544dd14e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+  <!-- Header Section -->
+  <header class="header">
+    <!-- Nav Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <h1><a href="./index.html" id="name">IFEOLUWA ADEPOJU</a></h1>
+        <button type="button" class="hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-list hamburger-list1"></span>
+            <span class="hamburger-list hamburger-list2"></span>
+            <span class="hamburger-list hamburger-list3"></span>
+          </span>
+        </button>
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a class="current" href="./about.html">ABOUT</a></li>
+          <li><a href="./projects.html">PROJECTS</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-	
+  <!-- About -->
+  <main class="about-container">
+    <div id="pro">
+      <div class="info">
+        <h1 id="main-name">ABOUT ME</h1>
+        <div class="about">
+          <h2>Profile</h2>
+          <p>
+            My name is Ifeoluwa Abolade Adepoju. I am a junior frontend developer currently working towards becoming a fullstack
+            developer.
+            I love programming and I have adequate knowledge in HTML, CSS and Javascript as well as 
+            the React framework.
+            I always aim to solve problems and complete tasks as efficiently as possible.
+          </p>
+          <h2>Technical Skills</h2>
+          <p>
+          <ul>
+            <li><i class="fab fa-html5"></i>HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js"></i>Javascript</li>
+            <li><i class="fab fa-react"></i>Reactjs</li>
+            <li><i class="fab fa-github"></i>Git Version Control</li>
+            <li><i class="fab fa-bootstrap"></i>Bootstrap</li>
+          </ul>
+          </p>
 
-	<!--Navigation Bar-->
-		<div class="container">
-			<div class="initials">
-				<h1><a href="index.html">Ifeoluwa Adepoju</a></h1>
-			</div>
-
-			<div class="top">
-				<ul>
-					<li><a href="About.html">Home</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="contact.html">Contacts</a></li>
-				</ul>
-			</div>
-			<div class="mobile-menu" id="menu-button" onclick="toggleMenu()">
-    			<i style="color:white" class="fa fa-bars fa-2x"></i>
-  			</div>
-		</div>
-
-        
-            <div class="slide-menu" id="menu" >
-                <ul>
-                    <li><a href="About.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contacts</a></li>
-                </ul>
-            </div>
-        
-<!--About-->
-		<div class="container1">
-			<div class="Pg2text">
-					<h1>About</h1>
-					<p>Hello, my name is <span>Adepoju Abolade Ifeoluwa</span>, i'm a junior front end web developer with proficiency in <span>[HTML]</span> and <span>[CSS]</span> and an on-going training in [JavaScript]. I am a graduate of Accounting from the Univesity of Abuja, whose inspiration is drawn from the smiles on the faces of the people around me (Young and Old) and how well i can make the brightness of their smile not go dim. A Business and Technology enthusiast who loves to unwind by watching football, listen to music and hangout with friends and family. I'm presently under training at<span> TIIDELab </span>, a subsidiary of <span> TECH SPECIALIST Ltd.</span>  </p>
-			</div>
-			<div class="Pg3text">
-				<img src="Images/img-04.jpg" width="250px" height="250px">
-			</div>
-		</div>
-<!--SkillS-->
-	<div class="pg">
-		<div class="skillz">
-			<h1>Skills</h1>
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-			</ul>
-		</div>
-	</div>
-
-<!--Newsletter-->
-	<div id="contact-form">
-                    
-            <p>Subscribe to my News-letters</p>
-            <form name="subscribe-form" id="subscribe-form" method="POST" data-netlify="true">
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input class="footer-email" type="email" name="email" placeholder="Enter Email..." id="email">
-                </div>
-                <button type= "submit" class="btn">Subscribe</button>
-            </form>
+          <h2>Non-Technical Skills</h2>
+          <p>
+          <ul>
+            <li><i class="fas fa-microphone"></i>Communication</li>
+            <li><i class="fas fa-question"></i>Problem Solving</li>
+            <li><i class="fab fa-think-peaks"></i>Critical & Design Thinking</li>
+            <li><i class="fas fa-balance-scale"></i>Ethical Decision Making</li>
+            <li><i class="fas fa-users"></i>Team Player</li>
+          </ul>
+          </p>
         </div>
-
- <section class="mansonry">
-     <h2 class="mason">TIIDELab <br>
-        <br>
-     MOMENTS</h2>
- 
-  </div>
-      <div class="box">
-       <a href="./Images/group work prep.jpg"> <img src="./Images/group work prep.jpg" alt=""></a>
-        <h4>TIIDELab fellows group discussion</h4>
+      </div>
+      <div class="info-img">
+        <img src="./img/image-01.jpg" alt="profile image">
+      </div>
     </div>
-    <div class="box">
-        <a href="./Images/group work preparation.jpg"> <img src="./Images/group work preparation.jpg" alt=""></a>
-        <h4>TIIDELab fellows group presentation</h4>
+  </main>
+  <div class="clr"></div>
+
+  <!-- Footer Section -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div id="contact">
+        <div class="social-foot">
+          <a href="tel:+2348133583159" target="_blank"><i class="flaticon-phone-call"></i></a>
+          <a href="mailto:ifebld@gmail.com" target="_blank"><i class="flaticon-email"></i></a>
+          <a href="https://www.linkedin.com/in/ifeoluwa-adepoju" target="_blank"><i class="flaticon-linkedin"></i></a>
+          <a href="https://github.com/ifebld" target="_blank"><i class="flaticon-github"></i></a>
+        </div>
+      </div>
+      <div id="copyright">
+        <p>Ifeoluwa Adepoju &copy; 2021, All Rights Reserved</p>
+      </div>
     </div>
-    
-    <div class="box">
-        <a href="./Images/Lagos fellows.jpg"> <img src="./Images/Lagos fellows.jpg" alt=""></a>
-        <h4>TIIDELab Lagos fellows</h4>
-    </div>
-    <div class="box">
-        <a href="./Images/lagos group work.jpg"> <img src="./Images/lagos group work.jpg" alt=""></a>
-        <h4>Lagos fellows group work</h4>
-    </div>
+  </footer>
 
-    <div class="box">
-        <a href="./Images/Tunji HoH challenge.jpg"> <img src="./Images/Tunji HoH challenge.jpg" alt=""></a>
-        <h4>Tunji during head of house challenge</h4>
-    </div>
-    <div class="box">
-        <a href="./Images/Abuja fellows.jpg"> <img src="./Images/Abuja fellows.jpg" alt=""></a>
-        <h4>Abuja fellows</h4>
-    </div>
-    <div class="box">
-        <a href="./Images/breakfast in Abuja.jpg"> <img src="./Images/breakfast in Abuja.jpg" alt=""></a>
-        <h4>Breakfast in Abuja</h4>
-    </div>
-  
-
-</section>
-
-
-
-<script>
-
-		let open = false;
- window.onload = function (argument) {
- 	
- }
-
- function toggleMenu() {
- 	var menuButton = document.getElementById("menu-button");
- 	var menu = document.getElementById("menu");
-
- 	if(open){
- 		menu.style.right = "-300px";
- 		open = false;
- 	}else{
- 		menu.style.right = 0;
- 		open = true;
- 	}
-
- 	console.log("Ran")
- }
-</script>
-	
-
+  <!-- Javascript -->
+  <script src="./js/main.js"></script>
 </body>
+
 </html>
